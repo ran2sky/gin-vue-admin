@@ -1,52 +1,6 @@
 <template>
   <div class="page">
     <div class="gva-card-box">
-      <div class="gva-card gva-top-card">
-        <div class="gva-top-card-left">
-          <div class="gva-top-card-left-title">早安，管理员，请开始一天的工作吧</div>
-          <div class="gva-top-card-left-dot">今日晴，0℃ - 10℃，天气寒冷，注意添加衣物。</div>
-          <div class="gva-top-card-left-rows">
-            <el-row>
-              <el-col :span="8" :xs="24" :sm="8">
-                <div class="flex-center">
-                  <i class="el-icon-sort icon" />今日流量 (1231231)
-                </div>
-              </el-col>
-              <el-col :span="8" :xs="24" :sm="8">
-                <div class="flex-center">
-                  <i class="el-icon-s-custom icon" />总用户数 (24001)
-                </div>
-              </el-col>
-              <el-col :span="8" :xs="24" :sm="8">
-                <div class="flex-center">
-                  <i class="el-icon-s-comment icon" />好评率 (99%)
-                </div>
-              </el-col>
-            </el-row>
-          </div>
-          <div>
-            <div class="gva-top-card-left-item">
-              使用教学：
-              <a
-                style="color:#409EFF"
-                target="view_window"
-                href="https://www.bilibili.com/video/BV1Rg411u7xH/"
-              >https://www.bilibili.com/video/BV1Rg411u7xH</a>
-            </div>
-            <div class="gva-top-card-left-item">
-              插件仓库：
-              <a
-                style="color:#409EFF"
-                target="view_window"
-                href="https://github.com/flipped-aurora/gva-plugins"
-              >https://github.com/flipped-aurora/gva-plugins</a>
-            </div>
-          </div>
-        </div>
-        <img src="@/assets/dashbord.png" class="gva-top-card-right" alt>
-      </div>
-    </div>
-    <div class="gva-card-box">
       <el-card class="gva-card quick-entrance">
         <template #header>
           <div class="card-header">
@@ -72,6 +26,34 @@
         </el-row>
       </el-card>
     <!-- <div class="quick-entrance-title"></div> -->
+    </div>
+    <div class="gva-card-box">
+      <div class="gva-card gva-top-card">
+        <div class="gva-top-card-left">
+          <div class="gva-top-card-left-title">事件监控统计</div>
+          <div class="gva-top-card-left-dot">今日晴，19℃ - 27℃</div>
+          <div class="gva-top-card-left-rows">
+            <el-row>
+              <el-col :span="8" :xs="24" :sm="8">
+                <div class="flex-center">
+                  <i class="el-icon-sort icon" />今日事件 (1231231)
+                </div>
+              </el-col>
+              <el-col :span="8" :xs="24" :sm="8">
+                <div class="flex-center">
+                  <i class="el-icon-s-custom icon" />总用户数 (24001)
+                </div>
+              </el-col>
+              <el-col :span="8" :xs="24" :sm="8">
+                <div class="flex-center">
+                  <i class="el-icon-s-comment icon" />好评率 (99%)
+                </div>
+              </el-col>
+            </el-row>
+          </div>
+        </div>
+        <!-- <img src="@/assets/dashbord.png" class="gva-top-card-right" alt> -->
+      </div>
     </div>
     <div class="gva-card-box">
       <div class="gva-card">

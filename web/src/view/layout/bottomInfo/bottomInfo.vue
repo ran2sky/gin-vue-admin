@@ -6,10 +6,6 @@
         <a href="https://github.com/flipped-aurora/gin-vue-admin">{{ $GIN_VUE_ADMIN.appName }}</a>
       </span>
       <el-divider direction="vertical" />
-      <span>Copyright</span>
-      <span>
-        <a href="https://github.com/flipped-aurora">flipped-aurora团队</a>
-      </span>
     </div>
   </div>
 </template>
@@ -24,7 +20,7 @@ export default {
 .bottom-info {
   color: #888;
   height: 30px;
-  line-height: 12px;
+  line-height: 20px;
   a {
     color: #888;
   }

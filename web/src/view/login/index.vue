@@ -6,9 +6,10 @@
           <img
             class="login_panle_form_title_logo"
             :src="$GIN_VUE_ADMIN.appLogo"
+            style="height:72px;width:72px"
             alt
           />
-          <p class="login_panle_form_title_p">{{ $GIN_VUE_ADMIN.appName }}</p>
+          <p class="login_panle_form_title_p" style="font-size:30px">{{ $GIN_VUE_ADMIN.appName }}</p>
         </div>
         <el-form
           ref="loginForm"
@@ -54,21 +55,21 @@
             </div>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" style="width: 46%" @click="checkInit"
+            <el-button type="primary" style="width: 46%;display:none" @click="checkInit"
               >前往初始化</el-button
             >
             <el-button
               type="primary"
-              style="width: 46%; margin-left: 8%"
+              style="width: 100%;margin-left:0px"
               @click="submitForm"
               >登 录</el-button
             >
           </el-form-item>
         </el-form>
       </div>
-      <div class="login_panle_right" />
+      <div class="login_panle_right" style="display:none" />
       <div class="login_panle_foot">
-        <div class="links">
+        <div class="links" style="display:none">
           <a href="http://doc.henrongyi.top/">
             <img src="@/assets/docs.png" class="link-icon" />
           </a>
@@ -83,7 +84,7 @@
           </a>
         </div>
         <div class="copyright">
-          Copyright &copy; {{ curYear }} 💖 flipped-aurora
+          Copyright &copy; {{ curYear }} 浩德科技
         </div>
       </div>
     </div>

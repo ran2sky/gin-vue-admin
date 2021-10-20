@@ -3,8 +3,8 @@
  */
 
 const config = {
-  appName: 'Gin-Vue-Admin',
-  appLogo: 'https://www.gin-vue-admin.com/img/logo.png'
+  appName: '浩德应急管理平台',
+  appLogo: 'src/assets/logo.png'
 }
 
 export default config

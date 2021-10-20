@@ -83,9 +83,6 @@ export default {
     showNext() {
       this.hello = this.hello + 1
     },
-    goDoc() {
-      window.open('https://www.gin-vue-admin.com/docs/first_master#3-init')
-    },
     async onSubmit() {
       const loading = this.$loading({
         lock: true,
