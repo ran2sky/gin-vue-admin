@@ -7,11 +7,22 @@
         </el-col>
 
         <el-col :span="12">
-			<a class="weatherwidget-io" href="https://forecast7.com/zh/31d23121d47/shanghai/" data-label_1="SHANGHAI" data-label_2="当前天气" data-font="微软雅黑 (Microsoft Yahei)" data-theme="pure" >SHANGHAI 当前天气</a>
+        <div style="text-align:center">环境气体监测</div>
+          <div>
+            <img src="@/assets/resource/environmentmap.png" height="450" width="800"/>
+          </div>
         </el-col>
         <el-col :span="12">
+                  <div style="text-align:center">高峰期路况监测</div>
+          <div>
+            <img src="@/assets/resource/environmentmap.png" height="450" width="800"/>
+          </div>
         </el-col>
         <el-col :span="12">
+        <div style="text-align:center">人流聚集监测</div>
+          <div>
+            <img src="@/assets/resource/trafficmap.png" height="450" width="800"/>
+          </div>
         </el-col>
 	</el-row>
   </div>

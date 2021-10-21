@@ -6,7 +6,7 @@
 	  <div>
     <div class="gva-table-box" style="border-bottom:10px solid;border-bottom-color:#f0f2f5" >
       <div style="height:30px;line-height:15px">联系人管理</div>
-      <el-form :inline="false" >
+      <el-form ref="elForm" :inline="false" >
         <el-form-item label="发送目标">
           <el-select
             v-model="tableData1.userId"
@@ -25,6 +25,7 @@
           <el-input  
           type="textarea" 
           :rows = "10"
+          @change="change($event)"
           v-model="messageData" />
         </el-form-item>
       </el-form>
@@ -48,39 +49,7 @@ export default {
         field109: undefined,
         field102: undefined,
       },
-      rules: {
-        field101: [{
-          required: true,
-          message: '请选择行政区域',
-          trigger: 'change'
-        }],
-        field108: [{
-          required: true,
-          message: '请选择部门',
-          trigger: 'change'
-        }],
-      },
-      regionOptions: [{
-        "label": "静安区",
-        "value": 1
-      }, {
-        "label": "长宁区",
-        "value": 2
-      }, {
-        "label": "宝山区",
-        "value": 3
-      }, {
-        "label": "浦东新区",
-        "value": 4
-      }],
-      depOptions: [{
-        "label": "交通管理部",
-        "value": 1
-      }, {
-        "label": "生产安全部",
-        "value": 2
-      }],
-      tableData1: [{
+            tableData1: [{
             userId: '01',
             name: '王小虎',
             region: "静安区",
@@ -104,9 +73,8 @@ export default {
             region: "长宁区",
             dept: "生产安全部",
             phonenumber: "13802931087"
-          }
-      ],
-      messageDate: void 0
+          }],
+      messageData: ''
     }
   },
   computed: {},
@@ -116,17 +84,21 @@ export default {
   mounted() {},
   methods: {
     submitForm() {
-      this.$refs['elForm'].validate(valid => {
-        if (!valid) return
-      })
+        this.$message({
+          type: "success",
+          message:"发送成功！"
+        })
     },
-    resetForm() {
+    clearForm() {
       this.$refs['elForm'].resetFields()
     },
     openDialog() {
       this.type = 'create'
       this.dialogFormVisible = true
     },
+    change(){
+      this.$forceUpdate()
+    }
 }
 }
 

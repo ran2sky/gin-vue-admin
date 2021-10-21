@@ -1,6 +1,7 @@
 <template>
   <div>
-    <el-row :gutter="5">
+    <el-row :gutter="5" style="align-item:center">
+      <span style="text-align:center">视频信号调度系统</span>
     </el-row>
 	<el-row :gutter="20">
 		 <el-col :span="12">

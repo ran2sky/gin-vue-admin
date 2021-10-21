@@ -31,7 +31,7 @@
       <div class="gva-card gva-top-card">
         <div class="gva-top-card-left">
           <div class="gva-top-card-left-title">事件监控统计</div>
-          <div class="gva-top-card-left-dot">今日晴，19℃ - 27℃</div>
+          <!-- <div class="gva-top-card-left-dot"><iframe width="320" height="150" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=13&py=shanghai&icon=1"></iframe></div> -->
           <div class="gva-top-card-left-rows">
             <el-row>
               <el-col :span="8" :xs="24" :sm="8">
